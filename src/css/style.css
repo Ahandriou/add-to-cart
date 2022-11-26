@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.my_nav {
+  @apply bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600;
+}
+.my_nav .div_nav {
+  @apply container flex flex-wrap items-center justify-between mx-auto;
+}
+.my_nav .div_nav .left_link {
+  @apply flex items-center;
+}
+.my_nav .div_nav .left_link .left_link_img {
+  @apply mr-3 sm:h-9 w-9;
+}
+.my_nav .div_nav .left_link .left_link_span {
+  @apply self-center text-xl font-semibold whitespace-nowrap dark:text-white;
+}
+.my_nav .div_nav .bouton_div {
+  @apply flex md:order-2;
+}
+.my_nav .div_nav .bouton_div .cart {
+  @apply transition duration-300 text-black  focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0;
+  position: relative;
+}
+.my_nav .div_nav .bouton_div .cart svg {
+  @apply w-7 h-7;
+}
+.my_nav .div_nav .bouton_div .cart:before {
+  content: attr(data-totalitems);
+  font-size: 10px;
+  font-weight: 600;
+  position: absolute;
+  top: -2px;
+  right: 0px;
+  background: black;
+  line-height: 20px;
+  padding: 0 6px 2px 5px;
+  height: 20px;
+  min-width: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 24px;
+}
+.my_nav .div_nav .bouton_div .cart:hover:before {
+  @apply bg-gray-700;
+}
+.my_nav .div_nav .bouton_div .cart:hover svg {
+  @apply fill-gray-700;
+}
+.my_nav .div_nav .bouton_div .bouton_toggle {
+  @apply inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600;
+}
+.my_nav .div_nav .menu_div {
+  @apply items-center justify-between w-full md:flex md:w-auto md:order-1;
+}
+.my_nav .div_nav .menu_div .menu_ul {
+  @apply flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700;
+}
+.my_nav .div_nav .menu_div .menu_ul .a_shop {
+  @apply block py-2 pl-3 text-base pr-4 text-white bg-gray-500 rounded md:bg-transparent md:text-gray-500 md:p-0 dark:text-white font-extrabold;
+}
+.my_nav .div_nav .menu_div .menu_ul .a_else {
+  @apply transition duration-300 block py-2 pl-3 text-base pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-extrabold;
+}
+
+.my_section {
+  @apply mt-16 bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900;
+}
+.my_section .div_section {
+  @apply container flex flex-wrap items-center justify-center mx-auto;
+}
+.my_section .div_section .card {
+  @apply m-10 w-full max-w-xs bg-white rounded-lg dark:bg-gray-800 dark:border-gray-700;
+  max-height: 500px;
+}
+.my_section .div_section .card .card_desc {
+  @apply px-5 pb-5;
+}
+.my_section .div_section .card .card_desc a .test_desc {
+  @apply text-xl font-semibold tracking-tight text-black dark:text-white;
+}
+.my_section .div_section .card .card_desc .card_stars {
+  @apply flex items-center mt-2.5 mb-5;
+}
+.my_section .div_section .card .card_desc .card_stars .star_note {
+  @apply bg-gray-100 text-gray-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-gray-200 dark:text-gray-300 ml-3;
+}
+.my_section .div_section .card .card_desc .card_bouton {
+  @apply flex items-center justify-between;
+}
+.my_section .div_section .card .card_desc .card_bouton .card_bouton_span {
+  @apply text-3xl font-bold text-gray-900  dark:text-white;
+}
+.my_section .div_section .card .card_desc .card_bouton .card_bouton_a {
+  @apply transition duration-300 text-white bg-gray-900 hover:bg-gray-700 focus:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700;
+}/*# sourceMappingURL=style.css.map */

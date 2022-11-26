@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		
+        "liveSassCompile.settings.includeItems": [
+            "/src/scss/style.scss",
+            // "path/subpath/b.scss",
+        ],
+
+		"liveSassCompile.settings.formats": [
+			// This is the default.
+			
+			{
+				"format": "expanded",
+				// "extensionName": ".min.css",
+				"extensionName": ".css",
+				"savePath": "/src/css"
+			}
+		]
+
+	}
+
+}
